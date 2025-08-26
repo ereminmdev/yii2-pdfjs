@@ -11,4 +11,8 @@ class PdfJsAsset extends AssetBundle
     public $js = [
         YII_DEBUG ? 'pdf.mjs' : 'pdf.min.mjs',
     ];
+
+    public $jsOptions = [
+        'type' => 'module',
+    ];
 }
